@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "S-Timer",
+  "description": "Timer to your applications",
+  "version": "1.0.0",
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icon.png",
+      "24": "icon.png",
+      "32": "icon.png"
+    },
+    "default_title": "S-Timer",
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html",
+  "permissions": ["alarms", "storage", "notifications"],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
